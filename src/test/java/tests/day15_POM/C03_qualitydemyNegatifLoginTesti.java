@@ -29,8 +29,10 @@ public class C03_qualitydemyNegatifLoginTesti {
         // giris yapilamadigini test edin
 
         Assert.assertTrue(qualitydemyPage.emailKutusu.isEnabled());
+
+
         // sayfayi kapatin
-        Driver.closeDriver();
+        // Driver.closeDriver();
     }
 
 }
