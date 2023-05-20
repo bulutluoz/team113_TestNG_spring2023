@@ -20,22 +20,22 @@ public class C01_DriverClassSonHali {
         Driver.closeDriver();
     }
 
-    // 2. method'da Wisequarter anasayfaya gidip, title'in wisequarter icerdigini test edin
+    // 2. method'da Wisequarter anasayfaya gidip, title'in Wise Quarter icerdigini test edin
 
     @Test
     public void wiseTest(){
         Driver.getDriver().get(ConfigReader.getProperty("wiseUrl"));
-        String expectedIcerik= "wisequarter";
+        String expectedIcerik= "Wise Quarter";
         String actualTitle= Driver.getDriver().getTitle();
         Assert.assertTrue(actualTitle.contains(expectedIcerik));
         Driver.closeDriver();
     }
 
-    // 3. method'da facebook anasayfaya gidip, title'in facebook icerdigini test edin
+    // 3. method'da facebook anasayfaya gidip, title'in Facebook icerdigini test edin
     @Test
     public void facebookTest(){
         Driver.getDriver().get(ConfigReader.getProperty("faceUrl"));
-        String expectedIcerik = "facebook";
+        String expectedIcerik = "Facebook";
         String actualTitle=Driver.getDriver().getTitle();
         Assert.assertTrue(actualTitle.contains(expectedIcerik));
         Driver.closeDriver();

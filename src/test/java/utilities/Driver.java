@@ -10,9 +10,19 @@ import org.openqa.selenium.safari.SafariDriver;
 import java.time.Duration;
 
 public class Driver {
-    static WebDriver driver;
+    private static WebDriver driver;
+    private Driver(){
+        /* Singleton pattern kullanilarak istenmeyen yontemlerle
+           driver objesine erisilmesini engelledik
+
+           Constructor'i private yaparak bu class'dan obje olusturularak
+           class uyelerinin kullanilmasinin onune gectik
+
+         */
+    }
 
     public static WebDriver getDriver(){
+
 
         String istenenBrowser = ConfigReader.getProperty("browser");
         // chrome, firefox, safari, edge
