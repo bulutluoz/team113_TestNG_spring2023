@@ -1,0 +1,20 @@
+<!-- Bir class'in icinde bir tek test method'u varsa
+    o method'u calistirmak icin class'i calistirmak yeterli olacaktir
+
+    method secimi, birden fazla test method'u barindiran class'larda
+    spesifik olarak bazi method'lari calistirmak
+    veya spesifik olarak belirlenen test method'lari disinda tum method'lari calistirmak
+    icin kullanilir-->
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="istenen test method'larini calistirma">
+
+    <test name="negatif testler">
+
+        <classes>
+            <class name="tests.day15_POM.C06_QualitydemyNegatifLoginTesti">
+
+            </class>
+        </classes>
+    </test>
+</suite>

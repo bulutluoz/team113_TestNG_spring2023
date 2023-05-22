@@ -6,6 +6,7 @@ import org.testng.asserts.SoftAssert;
 
 public class C03_SoftAssertion {
 
+
     @Test
     public void hardAssertion(){
 
@@ -67,6 +68,10 @@ public class C03_SoftAssertion {
         softAssert.assertFalse(sayi % 3 == 0,"Sayi 3'e bolunememeli"); // sayinin 3 ile bolunemedigini test edin
 
         softAssert.assertAll();
+
+        // softAssert objesi ile assertion'lari yaptiktan sonra
+        // assertAll() kullanmazsaniz, test direk PASSED olur,
+        // failed olan assertion'lar raporlanmaz
 
     }
 }
