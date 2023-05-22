@@ -4,7 +4,12 @@
     method secimi, birden fazla test method'u barindiran class'larda
     spesifik olarak bazi method'lari calistirmak
     veya spesifik olarak belirlenen test method'lari disinda tum method'lari calistirmak
-    icin kullanilir-->
+    icin kullanilir
+
+    Eger bir xml dosyasi ile
+    istedigimiz farkli package, class veya class'daki method'lari calistirmak istersek
+    hiyerarside uygun yerden yapiyi yeniden baslatabiliriz
+    -->
 
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="istenen test method'larini calistirma">
@@ -13,7 +18,19 @@
 
         <classes>
             <class name="tests.day15_POM.C06_QualitydemyNegatifLoginTesti">
+                <methods>
+                    <!-- sadece verilen method'lari calistirmasi icin include -->
+                    <include name="gecersizSifreTesti"></include>
+                    <include name="gecersizIsimTesti"></include>
+                </methods>
+            </class>
 
+            <class name="tests.day14_TestNGFrameworkOlusturma.C01_Priority">
+                <methods>
+                    <!-- verilen method'lar disindaki tum method'lari calistirmasi icin exclude -->
+                    <exclude name="youtubeTesti"></exclude>
+                    <exclude name="amazonTesti"></exclude>
+                </methods>
             </class>
         </classes>
     </test>
