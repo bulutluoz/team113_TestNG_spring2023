@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+
+<!-- TestNG'de paralel browser'lar kullanarak
+     ayni anda birden fazla browser'in calismasini saglayabilir
+     boylece toplam test suresini azaltabiliriz
+
+     Daha once kullandigimiz xml dosyalari
+     kendilerine gorev olarak verilen testleri SIRASI ile calistiriyorlardi.
+
+     Browser'lari paralel olarak calistirmak icin
+     <suite satirina ilaveler yapacagiz
+
+     thread-count : ayni anda calisacak browser sayisi
+     parallel : gorev paylasiminin hangi level'dan olacagini
+     verbose : consol'da otomatik olarak yazilan aciklamalarin kisa(1) veya uzun(10) olmasini kontrol eder
+     -->
+<suite name="Istenen class'lari calistirma" thread-count="2" parallel="classes" verbose="3">
+
+    <test name="smokeTest">
+
+        <classes>
+
+            <class name="tests.day15_POM.C05_QualitydemyLoginTesti"></class>
+            <class name="tests.day15_POM.C06_QualitydemyNegatifLoginTesti"></class>
+            <class name="tests.day16_POM_Assertions.C03_SoftAssertion"></class>
+
+        </classes>
+
+    </test>
+
+</suite>
