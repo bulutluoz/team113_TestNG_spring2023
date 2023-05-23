@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Raporlu dosyalari calistirma">
+    <test name="Toplu calistirmada rapor">
+        
+        <classes>
+            <class name="tests.day18_TestNGReports_ParalelCalistirma.C01_RaporluAmazonSearch"></class>
+            <class name="tests.day18_TestNGReports_ParalelCalistirma.C02_RaporluSoftAssert"></class>
+        </classes>
+        
+    </test>
+</suite>
