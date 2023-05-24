@@ -33,9 +33,9 @@
         <parameter name="browser" value="chrome"></parameter>
         <classes>
 
-            <class name="tests.day15_POM.C05_QualitydemyLoginTesti"></class>
-            <class name="tests.day15_POM.C06_QualitydemyNegatifLoginTesti"></class>
-            <class name="tests.day16_POM_Assertions.C03_SoftAssertion"></class>
+            <class name="tests.day19_crossBrowserTesting.C01_AmazonSearch"></class>
+            <class name="tests.day19_crossBrowserTesting.C02_AlertsTesti"></class>
+            <class name="tests.day19_crossBrowserTesting.C03_BasicAuthentication"></class>
 
         </classes>
 
@@ -44,21 +44,20 @@
         <parameter name="browser" value="firefox"></parameter>
         <classes>
 
-            <class name="tests.day15_POM.C05_QualitydemyLoginTesti"></class>
-            <class name="tests.day15_POM.C06_QualitydemyNegatifLoginTesti"></class>
-            <class name="tests.day16_POM_Assertions.C03_SoftAssertion"></class>
-
+            <class name="tests.day19_crossBrowserTesting.C01_AmazonSearch"></class>
+            <class name="tests.day19_crossBrowserTesting.C02_AlertsTesti"></class>
+            <class name="tests.day19_crossBrowserTesting.C03_BasicAuthentication"></class>
         </classes>
 
     </test>
 
-    <test name="edge test">
-        <parameter name="browser" value="edge"></parameter>
+    <test name="safari test">
+        <parameter name="browser" value="safari"></parameter>
         <classes>
 
-            <class name="tests.day15_POM.C05_QualitydemyLoginTesti"></class>
-            <class name="tests.day15_POM.C06_QualitydemyNegatifLoginTesti"></class>
-            <class name="tests.day16_POM_Assertions.C03_SoftAssertion"></class>
+            <class name="tests.day19_crossBrowserTesting.C01_AmazonSearch"></class>
+            <class name="tests.day19_crossBrowserTesting.C02_AlertsTesti"></class>
+            <class name="tests.day19_crossBrowserTesting.C03_BasicAuthentication"></class>
 
         </classes>
 
