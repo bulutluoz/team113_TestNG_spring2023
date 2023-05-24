@@ -1,0 +1,67 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<!--
+    Cross browser calistirdigimiz testlerin hepsini ayni browser ile calistirmak yerine
+    Uygun gordugumuz parcalara ayirip, her bir parcayi farkli browser ile calistirmak demektir
+
+    xml dosyasindan calistirdigiz testler sirasiyla calisir
+    her test Driver class'indan gelen driver'i kullanir
+    Driver class'i da driver objesini olustururken
+    hangi browser'in kullanilacagi bilgisini
+    configuration.properties dosyasindan alir
+
+    standart xml dosyasi, standart class'lar ve
+    standart olarak kullandigimiz Driver class'i ile
+    Cross Browser Test YAPMAK MUMKUN DEGILDIR
+
+    Cross browser cok ozel bir islem oldugundan
+    tum class'lar icin degil
+    belirlenmis az sayida class icin uygulanir
+
+    Cross browser ile test yapmak icin
+    calisan sistemde degisiklik yapmak zorundayiz
+
+    1- baslangic noktamiz xml dosyasi oldugu icin
+       degisiklige buradan basliyoruz
+
+
+-->
+
+<suite name="Istenen class'lari calistirma">
+
+    <test name="chrome test">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+
+            <class name="tests.day15_POM.C05_QualitydemyLoginTesti"></class>
+            <class name="tests.day15_POM.C06_QualitydemyNegatifLoginTesti"></class>
+            <class name="tests.day16_POM_Assertions.C03_SoftAssertion"></class>
+
+        </classes>
+
+    </test>
+    <test name="firefox test">
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+
+            <class name="tests.day15_POM.C05_QualitydemyLoginTesti"></class>
+            <class name="tests.day15_POM.C06_QualitydemyNegatifLoginTesti"></class>
+            <class name="tests.day16_POM_Assertions.C03_SoftAssertion"></class>
+
+        </classes>
+
+    </test>
+
+    <test name="edge test">
+        <parameter name="browser" value="edge"></parameter>
+        <classes>
+
+            <class name="tests.day15_POM.C05_QualitydemyLoginTesti"></class>
+            <class name="tests.day15_POM.C06_QualitydemyNegatifLoginTesti"></class>
+            <class name="tests.day16_POM_Assertions.C03_SoftAssertion"></class>
+
+        </classes>
+
+    </test>
+
+</suite>
